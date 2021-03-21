@@ -1,0 +1,175 @@
+
+:root{
+    --violeta: #2874A6;
+    --miel: #00e1ff;
+    --rosa: #AED6F1;
+    --cian: #00A7AD;
+    --celesteObscuro: #00A7AD;
+    --borderGris: #AED6F1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+p, h1, h2, h3{
+    font-family: 'Mukta', sans-serif;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    color:white;
+    background-color:var(--miel);
+    border: 1px solid var(--celesteObscuro);
+    display: flex;
+    align-items: center;
+}
+
+.body{
+    height: 90vh;
+    background-color:  var(--cian) ;
+}
+.header{
+    margin:auto;
+}
+.main{
+    width: 50%;
+    background-color:var(--miel) ;
+    border: 1px solid var(--borderGris);
+    border-radius: 10px;
+    box-shadow: 5px -10px 10px var(--borderGris);
+    display:block;
+    position: absolute;
+    top: 25%;
+    left:25%;
+}
+.mensaje, .mensaje2{
+    display: none;
+}
+.contenedor-titulo{
+    -webkit-text-stroke: 1px rgb(73, 73, 73);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(107, 105, 105, 0.377) ;
+}
+.contenedor-cuerpo{
+    height:40vh;
+    padding: 1rem;
+}
+
+.contenedor-cuerpo .button{
+    height: 3rem;
+    width: 8rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: black;
+    background-color: var(--rosa);
+    border: 2px solid var(--rosa);
+    border-radius: 10px;
+   
+    display: block;
+    position:absolute;
+    transition: linear .1s;
+}
+.button-si{
+    cursor: pointer;
+    top: 50%;
+    left: 25%;
+}
+.button-si:hover{
+    
+    color: white;
+    background-color: transparent;
+}
+.button-no{
+    top: 50%;
+    right: 25%;
+}
+.mensaje{
+    width: 30%;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: var(--celesteObscuro);
+    border: 1px solid var(--miel);
+    border-radius: 10px;
+    position:absolute;
+    box-shadow: 3px -5px 10px var(--miel);
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin:auto;
+    padding: 2rem;
+}
+
+.escribe-tu-nombre{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(221, 221, 221);
+    position: fixed;
+    z-index:1000;
+}
+
+
+.ventana{
+    width: 50%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(119, 119, 119, 0.623);
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.formulario input, .formulario a{
+    text-align:center;
+    background-color: transparent;
+    border: 1px solid var(--borderGris);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+.formulario input:focus, .formulario a:focus{
+    border: 2px solid rgb(0, 209, 216);
+}
+.formulario .sudmit:hover{
+    transition: linear .5s;
+    background-color: rgb(0, 209, 216);
+    color: white;
+}
+
+@media (max-width: 500px){
+    .header{
+        font-size: 0.6rem;
+    }
+    .main{
+        width: 90%;
+        left:0;
+        right: 0;
+        margin:auto;
+    }
+    .contenedor-cuerpo .button{
+        height: 2rem;
+        width: 5.6rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.6rem;
+    }
+    .button-si{
+        top: 50%;
+        left: 15%;
+    }
+    .button-no{
+        top: 50%;
+        right: 15%;
+    }
+    .mensaje{
+        top: 25%;
+    }
+    .ventana{
+        width: 80%;
+        top: 25%;
+        left: 15%;
+    }
+
+}
+
