@@ -31,7 +31,9 @@ if (!$resultado->num_rows>0) {
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-   </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+</head>
 <body>
     <header>
     
@@ -70,11 +72,11 @@ if (!$resultado->num_rows>0) {
 
                     <div class="cuerpo-links-compartir">
                         <div class="cuerpo-links-compartir-victima">
-                            <p>
-                                Comparte este link a la persona que elegiste para la pregunta:<br>
-                                <a href="#">http://localhost/quieres-ser-mi-novia¿/propuesta.php?id=<?php echo $id; ?>&nombre=<?php echo $victima; ?></a>
-                            </p>
-        
+                            <p> Comparte este link a la persona que elegiste para la pregunta:</p>
+                            <textarea id="textarea" rows="6" cols="40">http://localhost/quieres-ser-mi-novia¿/propuesta.php?id=<?php echo $id; ?>&nombre=<?php echo $victima; ?> </textarea><br/>
+                            <button id="copyBlock">Copiar enlace</button> <span id="copyAnswer"></span>
+                            
+
                         </div>
                         <div class="cuerpo-links-compartir-amigos">
                             <p>
@@ -130,7 +132,87 @@ if (!$resultado->num_rows>0) {
     
         </div>
     </div>
+    <footer>
+    
+    <div class="footer">
 
+        <div class="row">
+
+            <div class="footer-logo col-3 mx-auto">
+
+                <img src="img/logo.jpg" alt="Lu_Of_Luck" title="Lu_Of_Luck">
+
+            </div>
+
+
+            <div class="footer-privacidad col-5 mx-auto">
+
+                <p class="mx-auto">
+                    <a href="#"> política y privacidad </a> / 
+                    <a href="#"> cookies </a> / 
+                    <a href="#"> suport </a>
+                </p>
+
+            </div>
+
+            <div class="footer-redes col-3 mx-auto">
+                <ul class="mx-auto">
+                    <li>
+                        <a href="https://www.instagram.com/lugically_cosmic/" class="redes" target="_blank"> 
+                            <i class="fab fa-instagram"></i>
+                            <span>instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/lu.de.luck" class="redes" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span>facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LuOfLuck/" class="redes" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>                           
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="row">
+    
+            <div class="footer-derechos col-12 p3">
+    
+                <p>ADVERTENCIA: ESTO ES UNA PAGINA DE PRUEBA HECHA PARA EL ENTRETENIMIENTO NO PONER NINGUNA CLASE DE CONTRASEÑAS O/Y INFORMACIÓN SENSIBLE </p>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+</footer>
+
+<script language="JavaScript">
+    // Establecemos las variables
+    var textarea = document.getElementById("textarea");
+    var answer = document.getElementById("copyAnswer");
+    var copy   = document.getElementById("copyBlock");
+    copy.addEventListener('click', function(e) {
+    // Sleccionando el texto
+    textarea.select(); 
+    try {
+        // Copiando el texto seleccionado
+        var successful = document.execCommand('copy');
+
+        if(successful) answer.innerHTML = 'Copiado!';
+        else answer.innerHTML = 'Incapaz de copiar!';
+    } catch (err) {
+        answer.innerHTML = 'Browser no soportado!';
+    }
+    });
+<script>
 </body>
 </html>
 

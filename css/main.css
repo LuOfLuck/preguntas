@@ -1,5 +1,5 @@
 :root{
-    --violeta: #ff59ba;
+    --violeta: #91838b;
     --miel: #F7E36F;
     --rosa: #F757C2;
     --cian: #3EF1F7;
@@ -21,9 +21,10 @@ label, p, h1, h2, h3{
 label, h1, h2, h3{
     color: rgb(88, 88, 88);
 }
-header{
+header, footer{
     width: 100vw;
-    height: 10vh;
+    min-height: 10vh;
+    height:auto;
     background-color:var(--violeta);
     border: 1px solid var(--violeta);
     display: flex;
@@ -56,7 +57,6 @@ header{
 
 .contenedor .sub-titulo h3{
     margin: 1rem 0;
-    text-decoration: underline;
 }
 .contenedor-border{
     border: 1px solid var(--borderGris);
@@ -64,26 +64,54 @@ header{
     margin: 1rem 0.5rem;
     padding: 2rem 1rem;
     box-shadow: 5px -5px 10px var(--borderGris);
+    display: flex;
+    align-items: center;
 }
 .contenedor-border p{
     margin-bottom: 0.5rem ;
 }
-.formgrup input{
+.formulario-grupo {
+    border-radius: 10px;
     text-align:center;
     background-color: transparent;
     border: 1px solid var(--borderGris);
     border-radius: 50px;
+    padding: 1rem 2.3rem;
+}
+
+.formulario-grupo input, .sudmit{
+    border-radius: 10px;
+    border: 1px solid var(--borderGris);
     padding: 0.5rem 1rem;
+    color: rgb(88, 88, 88);
 }
-.formgrup input:focus{
+ .sudmit{
+     margin:auto;
+    border: 1px solid rgb(0, 209, 216);
+    background-color: white;
+}
+.formulario-grupo input:focus{
     border: 2px solid rgb(0, 209, 216);
+    box-shadow: 2px -2px 5px rgb(68, 239, 245);
 }
-.formgrup .sudmit:hover{
+.sudmit:hover{
     transition: linear .5s;
     background-color: rgb(0, 209, 216);
     color: white;
 }
+}
+.contenedor-border-explicacion{
+    width: 90%;
+    height: 100%;
+}
 
+.contenedor-border-explicacion img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
 @media (max-width: 500px){
     .header{
         font-size: 0.6rem;
@@ -91,3 +119,49 @@ header{
     .main{
         width: 100%;
     }
+    .formulario-grupo input, .sudmit{
+        margin: 1rem 0;
+    }
+    .contenedor-border-explicacion img{
+    display: block;
+    margin: 0;
+    width: 100%;
+    }
+}
+
+.footer{
+    width: 100%;
+
+}
+
+.footer-logo, .footer-privacidad, .footer-redes {
+    display: flex;
+    align-items: center;
+}
+.footer-logo img{
+    display:block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.footer-redes ul{
+    margin:auto;
+    list-style-type: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.footer-derechos,.footer-privacidad{
+    text-align: center;
+}
+.footer-derechos p,.footer-privacidad p{
+    font-size: 1.2rem;
+}
+.footer-derechos{
+    background-color: #555053;
+}

@@ -50,7 +50,8 @@ header{
     -webkit-text-stroke: 1px rgb(73, 73, 73);
     text-align: center;
     padding: 1rem;
-    border-bottom: 1px solid rgba(107, 105, 105, 0.377) ;
+    border-bottom: 1px solid r
+     ;
 }
 .contenedor-cuerpo{
     height:40vh;

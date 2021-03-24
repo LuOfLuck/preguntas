@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
 </head>
 <body>
+
     <header>
     
         <div class="header">
@@ -38,82 +41,192 @@
                     <h3>vamos a hacer esto juntos</h3>
         
                 </div>
+               
                 <div class="row">
-                    <div class="contenedor-border mensaje col-md-5 mx-auto">
+        
+                    <div class="row contenedor-border mensaje col-md-5 mx-auto">
             
-                        <p>Hola soy tu, y tu eres yo. <br> Haz venido aquí porque tienes una pregunta que quieres que la respuesta sea <b>si.</b><br>
-                            Pero por eso yo esoy aqui, para ayudarte :3... primero que nada quisiera saber tu nombre
-                        </p>
-                    
-                        <div class="formgrup my-auto">
+                        <div class="col-12 contenedor-border-texto">
+                       
+                            <p>Hola soy tu, y tu eres yo. <br> Haz venido aquí porque tienes una pregunta que quieres que la respuesta sea <b>si.</b><br>
+                                Pero por eso yo esoy aqui, para ayudarte :3... primero que nada quisiera saber tu nombre
+                            </p>
+                       
+                        </div>
+                        
+                        <div class="col-12 formulario-grupo my-auto">
                     
                             <label for="id_nombre">¿cual es tu nombre?:</label>
                 
-                            <input type="text" name="nombre" class="form-control" id="id_nombre" maxlength="30" placeholder="El desarrollador se llamaba Lu ;3" required>
+                            <input type="text" name="nombre" class="col-12" id="id_nombre" maxlength="30" placeholder="El desarrollador se llamaba Lu ;3" required>
                     
                         </div>
+                       
             
                     </div>
 
-                    <div class="contenedor-border pregunta col-md-5 mx-auto">
-            
-                        <p>
-                            Ahora que ya se tu nombre, ¿que pregunta deseas hacer :D?, recuerda que si dejas en blanco por defecto se pondrá <b><i> ¿quieres ser mi novia?</i></b>
-                        </p>
-            
-                        <div class="formgrup my-auto">
+                    <div class="row contenedor-border pregunta col-md-5 mx-auto">
+                
+                        <div class="col-12 contenedor-border-texto">
+                            
+                            <p>
+                                Ahora que ya se tu nombre, ¿que pregunta deseas hacer :D?, recuerda que si dejas en blanco por defecto se pondrá <b><i> ¿quieres ser mi novia?</i></b>
+                            </p>
+                        
+                        </div>
+                      
+                        <div class="col-12 formulario-grupo my-auto">
 
                             <label for="id_pregunta">Escribe aquí abajo tu pregunta pliss:</label>
                 
-                            <input type="text" name="pregunta" class="form-control" id="id_pregunta" placeholder="¿quieres ser mi novia?">
+                            <input type="text" name="pregunta" class="col-12" id="id_pregunta" placeholder="¿quieres ser mi novia?">
 
                         </div>
 
                     </div>
 
-                    <div class="contenedor-border victima col-md-5 mx-auto">
+                    <div class="row contenedor-border victima col-md-5 mx-auto">
+                 
+                        <div class="col-12 contenedor-border-texto">
             
-                        <p>
-                            Sip muy linda pregunta pero... ¿a quien se la quieres dedicar 7u7? <br>
-                            Pon el nombre por el cual quieres identificar a esa personita jj
-                        </p>
-            
-                        <div class="formgrup">
+                            <p>
+                                Sip muy linda pregunta pero... ¿a quien se la quieres dedicar 7u7? <br>
+                                Pon el nombre por el cual quieres identificar a esa personita jj
+                            </p>
+
+                        </div>
+                        
+                        <div class="col-12 formulario-grupo">
 
                             <label for="id_victima">¿Su nombre es?...</label>
                 
-                            <input type="text" name="victima" class="form-control" id="id_victima" placeholder="Nombre" requerid>
+                            <input type="text" name="victima" class="col-12" id="id_victima" placeholder="Nombre" requerid>
             
                         </div>
 
                     </div>
             
-                    <div class="contenedor-border suplica col-md-5 mx-auto">
-                        <p>
-                            en caso de poner un triste <b>No :c</b> que mensaje para suplicarle quieres, por defecto sera un <b><i>Por favor :c</i></b>
-                        </p>
-            
-                        <div class="formgrup my-auto">
-
-                            <label for="id_suplica form-control">Mensaje de suplica :c</label>
+                    <div class="row contenedor-border suplica col-md-5 mx-auto">
+                     
+                        <div class="col-12 contenedor-border-texto">
                 
-                            <input type="text" name="suplica" class="form-control" id="id_suplica" placeholder="Por favor :C">
-                            <br>
-                            <input type="submit" class="btn sudmit">
+                            <p>
+                                en caso de poner un triste <b>No :c</b> que mensaje para suplicarle quieres, por defecto sera un <b><i>Por favor :c</i></b>
+                            </p>
+                
+                        </div>
+                     
+                        <div class="col-12 formulario-grupo my-auto">
+                     
+                            <label for="id_suplica form-control">Mensaje de suplica :c</label>
+
+                            <input type="text" name="suplica" class="col-12  mx-auto" id="id_suplica" placeholder="Por favor :C">
 
                         </div>
+                     
+                        <div class="col-12">
+                     
+                            <input type="submit" class="col-10 col-md-6 mx-auto my-2 sudmit">
+                     
+                        </div>
+                    
                     </div>
                 </div>
+        
             </form>
+        
         </div>
+
+        <div class="contenedor">
+        
+            <div class="sub-titulo">
+        
+                <h3 class="text-center">¿pero que estamos haciendo?</h3>
+    
+            </div>
+
+            <div class="row contenedor-border">
+                <div class="col-12 contenedor-border-explicacion">
+                    <p>
+                        Esta pagina crea preguntas con respuestas de <b>SI</b> o <b>NO</b> pero el <b>NO</b> 
+                        se escapara cada ves que quieren apretarlos y se escribirá la suplica que elegiste, luego tu podrás saber cuantas veces te rechazo o si acepto antes de salir de la pagina.<br>
+                        Aquí hay una de prueba por si la quieres ver :D
+                    </p>
+                    <a href="http://luofluck.rf.gd/preguntas/propuesta.php?id=6&nombre=prueba" class="col-12" target="_BLANK">
+                        http://luofluck.rf.gd/preguntas/propuesta.php?id=6&nombre=prueba<br>
+                        <img src="img/imagen-muestra.png" alt="¿quieres ser mi novia?" title="Muestra">
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+
     
     </div>
 
-    <script src="js/index.js"></script>
-
     <footer>
-
+    
+        <div class="footer">
+    
+            <div class="row">
+    
+                <div class="footer-logo col-3 mx-auto">
+    
+                    <img src="img/logo.jpg" alt="Lu_Of_Luck" title="Lu_Of_Luck">
+    
+                </div>
+    
+    
+                <div class="footer-privacidad col-5 mx-auto">
+    
+                    <p class="mx-auto">
+                        <a href="#"> política y privacidad </a> / 
+                        <a href="#"> cookies </a> / 
+                        <a href="#"> suport </a>
+                    </p>
+    
+                </div>
+    
+                <div class="footer-redes col-3 mx-auto">
+                    <ul class="mx-auto">
+                        <li>
+                            <a href="https://www.instagram.com/lugically_cosmic/" class="redes" target="_blank"> 
+                                <i class="fab fa-instagram"></i>
+                                <span>instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/lu.de.luck" class="redes" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                                <span>facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LuOfLuck/" class="redes" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>                           
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+        
+            <div class="row">
+        
+                <div class="footer-derechos col-12 p3">
+        
+                    <p>ADVERTENCIA: ESTO ES UNA PAGINA DE PRUEBA HECHA PARA EL ENTRETENIMIENTO NO PONER NINGUNA CLASE DE CONTRASEÑAS O/Y INFORMACIÓN SENSIBLE </p>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+    
     </footer>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>
